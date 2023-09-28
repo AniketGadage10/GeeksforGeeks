@@ -1,0 +1,147 @@
+.experience__container {
+  padding: 0 3rem;
+}
+
+.experience__title {
+  text-align: center;
+  padding: 3rem;
+}
+
+.experience__title h5 {
+  color: var(--color-white);
+}
+
+.experience__title h2 {
+  color: var(--color-primary);
+}
+
+.experience__frontend {
+  background: var(--color-bg-variant);
+  padding: 4rem 6rem;
+
+  border-radius: 1.5rem 16rem;
+
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.experience__frontend:hover {
+  border-radius: 13.5rem 1.6rem;
+
+  background: transparent;
+  cursor: default;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  place-items: center;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.experience__details {
+  border-radius: 0.6rem 3.5rem;
+  height: 8rem;
+  width: 8rem;
+
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1.2rem 0.8rem;
+  border: 1px solid var(--color-primary);
+}
+
+.experience__details:hover {
+  border-radius: 3.5rem 0.6rem;
+}
+
+.experience__details-icons {
+  color: var(--color-primary);
+  font-size: 3.3rem;
+}
+
+/* ============ MEDIA QUERIES( MEDIUM DEVICES) ============= */
+
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    padding: 0 4rem;
+    /* margin: 0 auto 3rem; */
+  }
+
+  .experience__frontend {
+    padding: 2rem;
+    margin: 0 auto 3rem;
+    height: 26rem;
+    width: 30rem;
+    border-radius: 1rem 10rem;
+  }
+
+  .experience__frontend:hover {
+    border-radius: 8rem 1rem;
+  }
+
+  .experience__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+
+  .experience__details {
+    border-radius: 0.6rem 2.6rem;
+    padding: 1rem 0;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .experience__details:hover {
+    border-radius: 2.3rem 0.6rem;
+  }
+
+  .experience__details-icons {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+}
+
+/* ============ MEDIA QUERIES( SMALL DEVICES) ============= */
+
+@media screen and (max-width: 600px) {
+  .experience__frontend {
+    height: 42.5rem;
+    width: 18rem;
+  }
+
+  .experience__frontend h2 {
+    font-size: 1.4rem;
+  }
+
+  .experience__content {
+    grid-template-columns: 1fr;
+    row-gap: 1.7rem;
+  }
+
+  .experience__details {
+    height: 5rem;
+    width: 6rem;
+  }
+
+  .experience__details-icons {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+}
+
+/* ============ MEDIA QUERIES( 500px SMALL DEVICES) ============= */
+
+@media screen and (max-width: 500px) {
+  .experience__frontend {
+    width: 14rem;
+  }
+}

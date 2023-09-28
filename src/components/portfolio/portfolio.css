@@ -1,0 +1,120 @@
+.portfolio__title {
+  text-align: center;
+  padding: 3rem;
+}
+
+.portfolio__title h2 {
+  color: var(--color-primary);
+}
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 3rem;
+}
+
+.portfolio__item {
+  background: var(--color-bg-variant);
+  padding: 1.8rem;
+
+  border-radius: 0.6rem 6rem;
+  border: 1px solid var(--color-primary-variant);
+  transition: var(--transition);
+}
+
+.portfolio__item:hover {
+  background: transparent;
+  padding: 2rem;
+  border-radius: 6rem 0.6rem;
+}
+
+.portfolio__item-img {
+  border-radius: 0.5rem 2.8rem;
+  overflow: hidden;
+}
+
+.portfolio__item-img:hover {
+  border-radius: 2.8rem 0.5rem;
+}
+
+.portfolio__item h3 {
+  margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+a.btn__link {
+  border-top-right-radius: 48px;
+  border-bottom-left-radius: 48px;
+}
+
+.btn__link:hover {
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+
+/* ============ MEDIA QUERIES ============= */
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5rem;
+  }
+
+  a.btn__link small {
+    /* margin: 1rem; */
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .portfolio__item {
+    padding: 1.5rem;
+  }
+}
+
+/* ============ MEDIA QUERIES( SMALL TO MEDIUM ) ============= */
+
+@media screen and (max-width: 864px) {
+  .portfolio__container {
+    gap: 2rem;
+    padding: 0 10rem;
+  }
+
+  .portfolio__item {
+    padding: 0.8rem;
+    place-items: center;
+  }
+
+  .portfolio__item:hover {
+    padding: 1.2rem;
+  }
+
+  .portfolio__item-img {
+    width: 90%;
+    margin: 0.6rem;
+  }
+
+  a.btn__link small {
+    padding: 0 1.5rem;
+    font-size: 0.65rem;
+  }
+}
+
+/* ============ MEDIA QUERIES( SMALL DEVICES) ============= */
+
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    padding: 0 12rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  a.btn__link {
+    margin: 0 0.7rem;
+  }
+}
